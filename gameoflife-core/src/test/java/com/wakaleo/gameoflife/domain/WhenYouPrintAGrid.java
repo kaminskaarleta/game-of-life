@@ -23,7 +23,7 @@ public class WhenYouPrintAGrid {
 
         String expectedPrintedGrid = "..." + NEW_LINE +
                 "..." + NEW_LINE +
-                "..." + NEW_LINE + "";
+                "..." + NEW_LINE + "lalalala";
 
         GridWriter gridWriter = new GridWriter();
         String printedGrid = gridWriter.convertToString(gridContents);
