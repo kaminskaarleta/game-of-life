@@ -48,7 +48,7 @@ public class WhenYouCreateAGrid {
         String gridContents = ".*." + NEW_LINE + "..." + NEW_LINE + "...";
 
         Grid grid = new Grid(gridContents);
-        assertThat(grid.getLiveNeighboursAt(1, 1), is(1));
+        assertThat(grid.getLiveNeighboursAt(1, 1), is(5));
     }
 
     @Test
@@ -63,28 +63,28 @@ public class WhenYouCreateAGrid {
     @Test
     public void shouldBeAbleToCountLiveNeighboursOfACellInTheMiddleOfTheGrid() {
 
-        String gridContents = "..." + NEW_LINE + "***" + NEW_LINE + "...";
+        String gridContents = "..." + NEW_LINE + "*****" + NEW_LINE + "...";
 
         Grid grid = new Grid(gridContents);
-        assertThat(grid.getLiveNeighboursAt(1, 1), is(2));
+        assertThat(grid.getLiveNeighboursAt(1, 1), is(5));
     }
 
     @Test
     public void shouldBeAbleToCountLiveNeighboursOfACellOnAnotherLine() {
 
-        String gridContents = "..." + NEW_LINE + "***" + NEW_LINE + "...";
+        String gridContents = "..." + NEW_LINE + "****" + NEW_LINE + "...";
 
         Grid grid = new Grid(gridContents);
-        assertThat(grid.getLiveNeighboursAt(1, 0), is(3));
+        assertThat(grid.getLiveNeighboursAt(1, 0), is(5));
     }
 
     @Test
     public void shouldBeAbleToCountLiveNeighboursOfACellOnDiagonalsAndStraightLines() {
 
-        String gridContents = "***" + NEW_LINE + "*.*" + NEW_LINE + "***";
+        String gridContents = "***" + NEW_LINE + "*.**" + NEW_LINE + "***";
 
         Grid grid = new Grid(gridContents);
-        assertThat(grid.getLiveNeighboursAt(1, 1), is(8));
+        assertThat(grid.getLiveNeighboursAt(1, 1), is(5));
     }
 
     @Test
