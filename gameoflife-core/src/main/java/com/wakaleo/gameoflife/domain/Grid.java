@@ -19,8 +19,8 @@ public class Grid {
     }
 
     public Grid() {
-        this.cells = anArrayOfDeadCells(DEFAULT_ROW_COUNT,
-                                        DEFAULT_COLUMN_COUNT);
+        /*this.cells = anArrayOfDeadCells(DEFAULT_ROW_COUNT,
+                                        DEFAULT_COLUMN_COUNT);*/
     }
 
     public Grid(final int rows, final int columns) {
