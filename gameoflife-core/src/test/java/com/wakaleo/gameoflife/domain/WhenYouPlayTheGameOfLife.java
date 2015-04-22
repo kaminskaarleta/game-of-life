@@ -72,7 +72,7 @@ public class WhenYouPlayTheGameOfLife {
 
         String expectedNextGrid = ".*." + NEW_LINE +
                 ".*." + NEW_LINE +
-                ".*." + NEW_LINE + "";
+                ".*." + NEW_LINE + "" + ".*.";
 
         Universe theUniverse = new Universe(seededWith(initialGrid));
         theUniverse.createNextGeneration();

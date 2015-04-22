@@ -63,7 +63,6 @@ public class WhenYouReadAGridFromAString {
 
         Cell[][] expectedCells = {
                 {DEAD_CELL, DEAD_CELL, DEAD_CELL},
-                {DEAD_CELL, DEAD_CELL, DEAD_CELL},
                 {DEAD_CELL, DEAD_CELL, DEAD_CELL}
         };
 
