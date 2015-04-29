@@ -17,7 +17,7 @@ public class WhenYouCreateACell {
 
     @Test
     public void aDeadCellShouldBeRepresentedByADot() {
-        Cell cell = Cell.fromSymbol(".");
+        Cell cell = Cell.fromSymbol("...");
         assertThat(cell, is(DEAD_CELL));
     }
 

@@ -48,7 +48,7 @@ public class WhenYouCreateAGrid {
         String gridContents = ".*." + NEW_LINE + "..." + NEW_LINE + "...";
 
         Grid grid = new Grid(gridContents);
-        assertThat(grid.getLiveNeighboursAt(1, 1), is(5));
+        assertThat(grid.getLiveNeighboursAt(1, 1), is(1));
     }
 
     @Test
@@ -140,7 +140,7 @@ public class WhenYouCreateAGrid {
 
         Cell[][] contents = grid.getContents();
         assertThat(contents[0][0], is(LIVE_CELL));
-        assertThat(contents[1][0], is(LIVE_CELL));
+        assertThat(contents[0][1], is(LIVE_CELL));
         assertThat(contents[2][1], is(LIVE_CELL));
     }
 
