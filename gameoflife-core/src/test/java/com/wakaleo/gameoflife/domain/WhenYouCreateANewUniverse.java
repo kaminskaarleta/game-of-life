@@ -20,7 +20,7 @@ public class WhenYouCreateANewUniverse {
     public void aNewUniverseShouldContainOnlyDeadCells() {
         Universe theUniverse = new Universe();
         String currentGrid = theUniverse.getGrid();
-        assertThat(currentGrid, is(GRID_CELL));
+        assertThat(currentGrid, is(EMPTY_GRID));
     }
 
     @Test
